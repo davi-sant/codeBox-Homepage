@@ -1,0 +1,23 @@
+{
+  "name": "codebox-homepage",
+  "version": "1.0.0",
+  "description": "&lt;davi@santos> Homepage",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/tailwindInput/input.css -o ./tailwindOutput/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davi-sant/codeBox-Homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davi-sant/codeBox-Homepage/issues"
+  },
+  "homepage": "https://github.com/davi-sant/codeBox-Homepage#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.15"
+  }
+}
