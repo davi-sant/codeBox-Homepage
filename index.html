@@ -1,62 +1,112 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html class="no-js" lang="pt-Br">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-
+    <meta charset="utf-8" />
+    <title>Davi | CodeBox</title>
+    <meta
+      name="description"
+      content="Oii eu sou Davi e essa é minha pagina de contatos."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" href="#">
-
-    <link rel="stylesheet" href="./tailwindOutput/output.css">
-    <meta name="theme-color" content="#fafafa">
+    <link rel="apple-touch-icon" href="./src/icons/package.svg" />
+    <!-- styles on page -->
+    <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
 
-  <body class="w-full h-screen ">
-    <div class="flex flex-col w-full h-screen p-5 bg-gray-900">
-      <header class="flex flex-col items-center justify-center w-full">
-        
-        <figure class="w-[200px] h-[200px] rounded-full mt-[15px] bg-center bg-cover border-4 border-solid border-cyan-500" 
-                style="background-image: url('https://avatars.githubusercontent.com/u/97963191?v=4');"
-        >
-        </figure>
-        
-        <a class="flex items-center justify-center mb-[20px] w-full max-w-[600px] p-3 text-center text-lg rounded-[10px] mt-[30px] mb-[30px] font-bold text-gray-50 " 
-           href="#"
-        >
-            <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                class="mr-3 w-7 h-7 text-yeloo-500" 
-                viewBox="0 0 20 20" 
-                fill="#fef08a"
-            >
-              <path 
-                fill-rule="evenodd" 
-                d="M9 3a1 1 0 012 0v5.5a.5.5 0 001 0V4a1 1 0 112 0v4.5a.5.5 0 001 0V6a1 1 0 112 0v5a7 7 0 11-14 0V9a1 1 0 012 0v2.5a.5.5 0 001 0V4a1 1 0 012 0v4.5a.5.5 0 001 0V3z" clip-rule="evenodd" />
-            </svg>
-          Oii eu sou Davi, bem-vindo a minha pagina de contato. 
-        </a>
-      </header>
+  <body class="container">
+    <header class="header">
+      <figure class="header_content_imgProfile">
+        <img
+          class="header_img_profile"
+          src="./src/img/img-card-profile.png"
+          alt="imagem de perfil"
+        />
+      </figure>
+      <h1 class="header_title">Davi Santos</h1>
+      <p class="header_description">
+        <span class="header_description_content_incon">
+          <img
+            class="header_description_icon"
+            src="./src/icons/hello.gif"
+            alt="ícone de saudação"
+          />
+        </span>
+        Olá eu sou Davi || Front-end developer.
+      </p>
+    </header>
 
-      <main class="flex flex-col items-center w-full gap-x-2">
-        <a class="buttonLinks bg-gradient-to-r from-gray-400 to-gray-800" href="">GitHub</a>
-        <a class="buttonLinks bg-gradient-to-r from-cyan-300 to-blue-800" href="">LinkDin</a>
-        <a class="buttonLinks bg-gradient-to-r from-red-600 to-pink-400" href="">Instagram</a>
-        <a class="buttonLinks bg-gradient-to-r from-gray-300 to-gray-800" href="">CodePen</a>
-      </main>
-      <footer class="text-center text-gray-50 mt-[30px]">
-        FrontEnd Developer - 
-        <a class="text-cyan-500" href="">
-          @davi-sant 🚀
-        </a>
-      </footer>
-    </div>
+    <main class="main">
+      <section class="main_content_card">
+        <abbr title="Abrir GitHub">
+          <button class="main_card backdrop-blur">
+            <img
+              class="main_card_icon"
+              src="./src/icons/Github - Negative.svg"
+              alt="ícone do GitHub"
+            />
+            GitHub
+          </button>
+        </abbr>
+        <abbr title="Abrir GitHub">
+          <button class="main_card backdrop-blur">
+            <img
+              class="main_card_icon"
+              src="./src/icons/LinkedIn - Negative.svg"
+              alt="ícone do GitHub"
+            />
+            LinkedIn
+          </button>
+        </abbr>
+        <abbr title="Abrir GitHub">
+          <button class="main_card backdrop-blur">
+            <img
+              class="main_card_icon"
+              src="./src/icons/Telegram - Negative.svg"
+              alt="ícone do GitHub"
+            />
+            Telegram
+          </button>
+        </abbr>
+        <abbr title="Abrir GitHub">
+          <button class="main_card backdrop-blur">
+            <img
+              class="main_card_icon"
+              src="./src/icons/Instagram - Negative.svg"
+              alt="ícone do GitHub"
+            />
+            Instagram
+          </button>
+        </abbr>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer_credit">
+        <span
+          ><img
+            class="footer_icon"
+            src="./src/icons/package.svg"
+            alt="ícone box" /></span
+        >FrontEnd Developer -
+        <a
+          class="footer_link"
+          href="https://github.com/davi-sant"
+          target="_blank"
+        >@davi-sant</a>
+        <span
+          ><img
+            class="footer_icon"
+            src="./src/icons/rocket.svg"
+            alt="ícone foguete"
+        /></span>
+      </p>
+    </footer>
   </body>
- </html>
+</html>
